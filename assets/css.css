@@ -1,3 +1,11 @@
+:root {
+    --lightp: #e2cfea;
+    --medp: #a06cd5;
+    --darkp: #6247aa;
+    --darkb: #102b3f;
+    --darkg: #062726;
+  }
+
 .hide {
     display: none;
 }
@@ -5,3 +13,22 @@
 .show{
     display:block;
 }
+
+header{
+    background-color: var(--darkb);
+    color: var(--lightp);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+body{
+
+    background-color: var(--darkp);
+    color: var(--lightp);
+}
+#startbtn {
+    color: white;
+    background-color: red;
+}
+   
