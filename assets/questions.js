@@ -2,12 +2,12 @@ var questions= [
 
     {
         question:"Inside which HTML element do we put the JavaScript?",
-        answers:["script","link", "join", "connect"], 
+        answers:["link", "script", "join", "connect"], 
         correct:"script"
     },
     {
         question:"Where is the correct place to insert the JavaScript?",
-        answers:["body","head", "header", "footer"],
+        answers:["head", "header","body", "footer"],
         correct:"body"
     },
     {
