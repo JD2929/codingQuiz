@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="./assets/css.css">
+    <link rel="stylesheet" href="./assets/css.css">
     <title>Coding Quiz</title>
 </head>
 
 <body>
-    <header class = "startContainer">
+    <header class="startContainer">
         <h1>Coding Quiz Challenge</h1>
         <h2> In this quiz you will have 10 questions. You have 30 seconds to choose your answer.</h2>
-        <button id = "startbtn">Start</button>
+        <button id="startbtn">Start</button>
     </header>
-   
-<div class="questionContainer hide">
-    <h2 id = "questionTitle">this is where the question will go</h2>
-    <div class = "allbuttons"></div>
-    
-</div>
 
-<script src="./assets/questions.js"></script>
+    <div class="questionContainer hide">
+        <h2 id="questionTitle"></h2>
+        <div class="allbuttons"></div>
+
+    </div>
+
+    <div>
+        <h1 class="time" style="text-align:right;">seconds left!</h1>
+    </div>
+
+    <div class="nameContainer hide">
+
+        <h3>Enter your initials for the High Score Board.</h3>
+        <input type="text">
+        <button>Enter</button>
+    </div>
+
+
+    <script src="./assets/questions.js"></script>
     <script src="./assets/js.js"> </script>
 </body>
 
