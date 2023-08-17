@@ -17,4 +17,7 @@ Link to the Deployed Page
 https://jd2929.github.io/codingQuiz/
 
 
-##Screen Shot of Deployed Page
+##Screen Shot of Deployed Page 
+![Screenshot 2023-08-16 Deployed Quiz page jpg](https://github.com/JD2929/codingQuiz/assets/139637504/9aeba9e3-59f2-4c42-8b05-92045bb8c35e)
+
+
