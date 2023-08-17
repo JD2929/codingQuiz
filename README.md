@@ -14,4 +14,7 @@ https://github.com/JD2929/codingQuiz
 
 Link to the Deployed Page
 
+https://jd2929.github.io/codingQuiz/
+
+
 ##Screen Shot of Deployed Page
