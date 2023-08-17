@@ -1,6 +1,8 @@
+//retrieving from localStorage and parsing the array back into a string
+
 var scores = JSON.parse(localStorage.getItem("scores")) || []
 var clear =document.getElementById("clear")
-
+//Creating the Score Board List
 function displayScores(){
     var ul = document.getElementById("scoreList")
 
@@ -11,6 +13,8 @@ function displayScores(){
     }
 }
 displayScores ()
+
+//Clearing the scoreboard function for the clear button
 
 clear.addEventListener("click", ()=>{
     localStorage.clear()

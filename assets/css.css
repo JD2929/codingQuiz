@@ -1,34 +1,115 @@
+/*set color palette*/
 :root {
     --lightp: #e2cfea;
     --medp: #a06cd5;
     --darkp: #6247aa;
     --darkb: #102b3f;
-    --darkg: #062726;
-  }
-
+   
+}
+/*set changing display modes*/
 .hide {
     display: none;
 }
 
-.show{
-    display:block;
+.show {
+    display: block;
 }
+/* styling the body*/
+body {
 
-header{
+    background-color: var(--lightp);
+    color: var(--darkp);
+}
+/* styling the 2 headers*/
+
+header, #scorePageHeader {
     background-color: var(--darkb);
     color: var(--lightp);
     text-align: center;
-    justify-content: center;
-    
+    border: var(--medp) solid 4px;
+    border-radius: 5px;
+    height: 70px;
 }
 
-body{
-
-    background-color: var(--darkp);
-    color: var(--lightp);
+h2 {
+    color:var(--medp);
+    text-align: center;
 }
+/* styling the various buttons*/
 #startbtn {
-    color: white;
-    background-color: red;
+    color:var(--medp);
+    background-color: var(--darkb);
+    height: 50px;
+    width: 60px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
+    text-align: center;
 }
+#score-page{
+    color:var(--lightp);
+    background-color: var(--lightp);
+    height: 50px;
+    width: 80px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
    
+   
+}
+/* styling the questions and area*/
+.questionContainer{
+    background-color: var(--lightp);
+    color: var(--darkp);
+    text-align: center;
+}
+button {
+    color:var(--lightp);
+    background-color: var(--darkp);
+    height: 70px;
+    width: 120px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
+ 
+   text-decoration: none;
+}
+.nameContainer{
+    background-color: var(--lightp);
+    color: var(--darkp);
+    text-align: center;
+}
+
+
+#submitBtn{
+    color:var(--medp);
+    background-color: var(--darkb);
+    height: 30px;
+    width: 50px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+/* styling the scoreboard list*/
+ul li{
+font-size: 20px;
+color: var(--darkp);
+list-style-type: var(--darkp);
+list-style-type: square;
+display: block;
+}
+/* styling the scoreboard buttons*/
+#goBack {
+    color:var(--lightp);
+    background-color: var(--lightp);
+    height: 50px;
+    width: 80px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
+}
+#clear{
+    color:var(--medp);
+    background-color: var(--darkb);
+    height: 50px;
+    width: 80px;
+    border: var(--medp) 2px solid;
+    border-radius: 5px;
+    text-align: center; 
+}

@@ -11,32 +11,32 @@
 <body>
     <header class="startContainer">
         <h1>Coding Quiz Challenge</h1>
-       
+        <h2> In this quiz you will have 30 seconds to answer 3 questions. Be careful each wrong answer will subtract 2 seconds from the timer!</h2>
+        <button id="startbtn">Start</button>
+        <button id="score-page" style="position:absolute; right:80px; top:20px"><a
+                href="scorePage.html">High Scores</a></button>
     </header>
 
-    <div>
-        <h2> In this quiz you will have 10 questions. You have 30 seconds to choose your answer.</h2>
-        <button id="startbtn">Start</button>
-        <button id="score-page"><a href="scorePage.html">High Scores</a></button> 
-    </div>
+
+
     <div class="questionContainer hide">
         <h2 id="questionTitle"></h2>
         <div class="allbuttons"></div>
 
-    </div> 
-<div id ="checker"></div>
-<div>
-    <h2 class = "scoreCounter hide" style="text-align: center;"> </h2>
-</div>
+    </div>
+    <div id="checker"></div>
     <div>
-        <h1 class="time show" style="text-align:right;">seconds left!</h1>
+        <h2 class="scoreCounter hide" style="text-align: center;"> </h2>
+    </div>
+    <div>
+        <h1 class="time show" style="text-align:right;"></h1>
     </div>
 
     <div class="nameContainer hide">
 
         <h3>Enter your initials for the Score Board.</h3>
-        <input id= "nameInput" type="text">
-        <button id ="submitBtn">Enter</button>
+        <input id="nameInput" type="text">
+        <button id="submitBtn">Enter</button>
     </div>
 
 
