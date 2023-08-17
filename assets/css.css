@@ -4,8 +4,9 @@
     --medp: #a06cd5;
     --darkp: #6247aa;
     --darkb: #102b3f;
-   
+
 }
+
 /*set changing display modes*/
 .hide {
     display: none;
@@ -14,15 +15,18 @@
 .show {
     display: block;
 }
+
 /* styling the body*/
 body {
 
     background-color: var(--lightp);
     color: var(--darkp);
 }
+
 /* styling the 2 headers*/
 
-header, #scorePageHeader {
+header,
+#scorePageHeader {
     background-color: var(--darkb);
     color: var(--lightp);
     text-align: center;
@@ -32,12 +36,19 @@ header, #scorePageHeader {
 }
 
 h2 {
-    color:var(--medp);
+    color: var(--medp);
     text-align: center;
 }
+
+h4 {
+    color: var(--darkp);
+    font-size: 30px;
+    position: absolute; right: 45%; top:50%;
+}
+
 /* styling the various buttons*/
 #startbtn {
-    color:var(--medp);
+    color: var(--medp);
     background-color: var(--darkb);
     height: 50px;
     width: 60px;
@@ -45,41 +56,48 @@ h2 {
     border-radius: 5px;
     text-align: center;
 }
-#score-page{
-    color:var(--lightp);
+
+#checker {
+    font-size: 30px;
+
+}
+
+#score-page {
+    color: var(--lightp);
     background-color: var(--lightp);
     height: 50px;
     width: 80px;
     border: var(--medp) 2px solid;
     border-radius: 5px;
-   
-   
+
+
 }
+
 /* styling the questions and area*/
-.questionContainer{
+.questionContainer {
     background-color: var(--lightp);
     color: var(--darkp);
     text-align: center;
 }
+
 button {
-    color:var(--lightp);
+    color: var(--lightp);
     background-color: var(--darkp);
     height: 70px;
-    width: 120px;
+    width: 150px;
     border: var(--medp) 2px solid;
     border-radius: 5px;
- 
-   text-decoration: none;
 }
-.nameContainer{
+
+.nameContainer {
     background-color: var(--lightp);
     color: var(--darkp);
     text-align: center;
 }
 
 
-#submitBtn{
-    color:var(--medp);
+#submitBtn {
+    color: var(--medp);
     background-color: var(--darkb);
     height: 30px;
     width: 50px;
@@ -87,29 +105,36 @@ button {
     border-radius: 5px;
     text-align: center;
 }
+
 /* styling the scoreboard list*/
-ul li{
-font-size: 20px;
-color: var(--darkp);
-list-style-type: var(--darkp);
-list-style-type: square;
-display: block;
+ul li {
+    font-size: 20px;
+    color: var(--darkp);
+    list-style-type: var(--darkp);
+    list-style-type: square;
+ text-align: center;
+ list-style-position: inside;
+    
 }
+
 /* styling the scoreboard buttons*/
 #goBack {
-    color:var(--lightp);
+    color: var(--lightp);
     background-color: var(--lightp);
     height: 50px;
     width: 80px;
     border: var(--medp) 2px solid;
     border-radius: 5px;
+    position: absolute; right: 80px; top: 80 px;
 }
-#clear{
-    color:var(--medp);
+
+#clear {
+    color: var(--medp);
     background-color: var(--darkb);
     height: 50px;
     width: 80px;
     border: var(--medp) 2px solid;
     border-radius: 5px;
-    text-align: center; 
+    text-align: center;
+    position:absolute; right:80px; top:20px
 }
