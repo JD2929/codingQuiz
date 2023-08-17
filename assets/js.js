@@ -12,6 +12,7 @@ var nameInput = document.querySelector("#nameInput");
 var submitBtn = document.querySelector("#submitBtn");
 var checker = document.getElementById("checker");
 
+//setting global variables
 var quizLengthSeconds = 10;
 var current = 0;
 var secondsLeft = quizLengthSeconds;
@@ -19,6 +20,7 @@ var timerInterval;
 var score = 0;
 var tallyBoard = [];
 
+//Function that starts the quiz
 function updateQuiz() {
     if (current === questions.length) {
 
@@ -26,7 +28,7 @@ function updateQuiz() {
     }
 
     answerArea.innerHTML = ""
-    questionTitle.textContent = questions[current].question;
+    questionTitle.textContent = questions[current].questions;
     scoreCounter.classList.replace("hide", "show");
 
     for (let i = 0; i < questions[current].answers.length; i++) {
@@ -37,7 +39,7 @@ function updateQuiz() {
     }
 
 }
-
+//Function that keeps the timer decreasing
 function setTime() {
     secondsLeft = quizLengthSeconds;
     timeEl.textContent = secondsLeft + "seconds left";
@@ -46,14 +48,14 @@ function setTime() {
         timeEl.textContent = secondsLeft + "  seconds left!";
 
         if (secondsLeft === 0) {
-            textContent = "Time's Up!";
+            
             completeQuiz();
 
         }
     }, 1000);
 }
 
-
+//Function that checks if the button picked is the correct answer or not
 function checkAnswer(answer) {
     if (answer === questions[current].correct) {
         checker.textContent = "Correct!"
@@ -76,7 +78,7 @@ function checkAnswer(answer) {
         }, 1000)
     }
 }
-
+//Function that runs to clear the screen when the quiz is over
 function completeQuiz() {
     questionContainer.style.display = "none";
     clearInterval(timerInterval);
@@ -84,7 +86,8 @@ function completeQuiz() {
     nameContainer.style.display = "block";
 }
 
-
+//Event listeners follow with their specific label 
+//Start button
 startbtn.addEventListener("click", () => {
     startContainer.classList.add("hide");
     questionContainer.classList.replace("hide", "show");
@@ -92,14 +95,14 @@ startbtn.addEventListener("click", () => {
     setTime();
 
 })
-
+//Answer Buttons
 answerArea.addEventListener("click", () => {
     var btnclick = this.event.target.textContent;
     checkAnswer(btnclick);
 
 
 })
-
+//Submit Initials Button
 submitBtn.addEventListener("click", () => {
     var userInput = nameInput.value;
 
