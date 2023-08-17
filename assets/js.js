@@ -13,7 +13,7 @@ var submitBtn = document.querySelector("#submitBtn");
 var checker = document.getElementById("checker");
 
 //setting global variables
-var quizLengthSeconds = 10;
+var quizLengthSeconds = 30;
 var current = 0;
 var secondsLeft = quizLengthSeconds;
 var timerInterval;
@@ -28,15 +28,15 @@ function updateQuiz() {
     }
 
     answerArea.innerHTML = ""
-    questionTitle.textContent = questions[current].questions;
+    questionTitle.textContent = questions[current].question;
     scoreCounter.classList.replace("hide", "show");
-
     for (let i = 0; i < questions[current].answers.length; i++) {
         var btn = document.createElement("button");
         btn.setAttribute("class", "answerbtn");
         btn.textContent = questions[current].answers[i];
         answerArea.append(btn);
     }
+
 
 }
 //Function that keeps the timer decreasing
@@ -47,8 +47,8 @@ function setTime() {
         secondsLeft--;
         timeEl.textContent = secondsLeft + "  seconds left!";
 
-        if (secondsLeft === 0) {
-            
+        if (secondsLeft <= 0) {
+
             completeQuiz();
 
         }
@@ -62,7 +62,7 @@ function checkAnswer(answer) {
         setTimeout(() => {
             checker.textContent = ""
             score++;
-            scoreCounter.innerHTML = score
+            scoreCounter.innerHTML = "Current Score: " + score
             current++;
             updateQuiz();
         }, 1000)
@@ -74,6 +74,11 @@ function checkAnswer(answer) {
             checker.textContent = ""
             current++;
             secondsLeft = secondsLeft - 2;
+            if (secondsLeft <= 0) {
+
+                completeQuiz();
+
+            }
             updateQuiz();
         }, 1000)
     }
@@ -84,6 +89,7 @@ function completeQuiz() {
     clearInterval(timerInterval);
     timeEl.style.display = "none";
     nameContainer.style.display = "block";
+    current = 0
 }
 
 //Event listeners follow with their specific label 
